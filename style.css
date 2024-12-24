@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s ease;
+  box-sizing: border-box;
+}
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+/* Modal oyna boshlandi */
+
+.modal-back {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  top: -1500px;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  
+  width: 400px;
+  height: 300px;
+  border-radius: 16px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  text-align: center;
+  padding: 30px;
+}
+.hisob {
+  padding-top: 20px;
+}
+.calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+.xcalc,
+.ocalc {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  /* background: linear-gradient(45deg, #46C0BC, #46C0BC); */
+  background-color: transparent;
+  border: 2px solid #77a1d3;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.try {
+  margin-top: 40px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to right, #77a1d3, #79c9ca);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  transition: all .5s ease;
+}
+.try:hover{
+    background: linear-gradient(to right, #87baf8, #8bd2d3)
+}
+.try:active{
+    box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, .54);
+}
+/* Modal oyna tugadi */
+.game {
+  padding: 25px;
+  width: 650px;
+  border-radius: 16px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px -2px #5e0fbf86;
+  background: linear-gradient(135deg, #5e0fbf86 35%, #ab146fb7);
+}
+.show {
+  top: 0;
+}
+.row {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cell {
+  background-color: #41084d;
+  width: 195px;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 140px;
+  border: none;
+  color: white;
+  border-radius: 16px;
+}
+.circle {
+  display: none;
+}
+.xmark {
+  display: none;
+}
