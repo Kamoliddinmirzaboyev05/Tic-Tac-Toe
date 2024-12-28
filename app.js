@@ -27,8 +27,13 @@ const circle7 = document.querySelector(".circle7");
 const circle8 = document.querySelector(".circle8");
 const circle9 = document.querySelector(".circle9");
 
+const xHisobi = document.querySelector("#xhisobi");
+const oHisobi = document.querySelector("#ohisobi");
+const tryBtn = document.querySelector("#tryBtn");
+const whoWin = document.querySelector(".whoWin");
+
 const modalBack = document.querySelector(".modal-back"),
-modal = document.querySelector(".modal");
+  modal = document.querySelector(".modal");
 let bosildi = 0,
   x1Bosildi = 0,
   x2Bosildi = 0,
@@ -66,12 +71,14 @@ cell1.addEventListener("click", () => {
   ) {
     modalBack.classList.add("show");
 
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
   } else if (
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1) ||
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    modalBack.classList.add("show");
   }
 });
 cell2.addEventListener("click", () => {
@@ -88,12 +95,14 @@ cell2.addEventListener("click", () => {
     (x2Bosildi == 1 && x5Bosildi == 1 && x8Bosildi == 1) ||
     (x1Bosildi == 1 && x2Bosildi == 1 && x3Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = (xHisobi.textContent)++;
+    modalBack.classList.add("show");
   } else if (
     (o2Bosild == 1 && o5Bosild == 1 && o8Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell3.addEventListener("click", () => {
@@ -111,13 +120,15 @@ cell3.addEventListener("click", () => {
     (x1Bosildi == 1 && x2Bosildi == 1 && x3Bosildi == 1) ||
     (x3Bosildi == 1 && x5Bosildi == 1 && x7Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    xHisobi.textContent = xHisobi.textContent++;
+    modalBack.classList.add("show");
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1) ||
     (o3Bosild == 1 && o5Bosild == 1 && o7Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = Number(oHisobi)++;
+    modalBack.classList.add("show");
   }
 });
 cell4.addEventListener("click", () => {
@@ -134,12 +145,14 @@ cell4.addEventListener("click", () => {
     (x1Bosildi == 1 && x4Bosildi == 1 && x7Bosildi == 1) ||
     (x4Bosildi == 1 && x5Bosildi == 1 && x6Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    xHisobi.textContent = xHisobi.textContent++;
+    modalBack.classList.add("show");
   } else if (
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1) ||
     (o4Bosild == 1 && o5Bosild == 1 && o6Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell5.addEventListener("click", () => {
@@ -157,13 +170,15 @@ cell5.addEventListener("click", () => {
     (x2Bosildi == 1 && x5Bosildi == 1 && x8Bosildi == 1) ||
     (x3Bosildi == 1 && x5Bosildi == 1 && x7Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    xHisobi.textContent = xHisobi.textContent++;
+    modalBack.classList.add("show");
   } else if (
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
     (o2Bosild == 1 && o5Bosild == 1 && o8Bosild == 1) ||
     (o3Bosild == 1 && o5Bosild == 1 && o7Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell6.addEventListener("click", () => {
@@ -180,12 +195,14 @@ cell6.addEventListener("click", () => {
     (x3Bosildi == 1 && x6Bosildi == 1 && x9Bosildi == 1) ||
     (x4Bosildi == 1 && x5Bosildi == 1 && x6Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = (xHisobi.textContent)++;
+    modalBack.classList.add("show");
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o4Bosild == 1 && o5Bosild == 1 && o6Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell7.addEventListener("click", () => {
@@ -203,13 +220,15 @@ cell7.addEventListener("click", () => {
     (x3Bosildi == 1 && x5Bosildi == 1 && x7Bosildi == 1) ||
     (x7Bosildi == 1 && x8Bosildi == 1 && x9Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = (xHisobi.textContent)++;
+    modalBack.classList.add("show");
   } else if (
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1) ||
     (o3Bosild == 1 && o5Bosild == 1 && o7Bosild == 1) ||
     (o7Bosild == 1 && o8Bosild == 1 && o9Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell8.addEventListener("click", () => {
@@ -226,12 +245,14 @@ cell8.addEventListener("click", () => {
     (x2Bosildi == 1 && x8Bosildi == 1 && x5Bosildi == 1) ||
     (x7Bosildi == 1 && x8Bosildi == 1 && x9Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = (xHisobi.textContent)++;
+    modalBack.classList.add("show");
   } else if (
     (o2Bosild == 1 && o8Bosild == 1 && o5Bosild == 1) ||
     (o7Bosild == 1 && o8Bosild == 1 && o9Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
 });
 cell9.addEventListener("click", () => {
@@ -249,12 +270,22 @@ cell9.addEventListener("click", () => {
     (x1Bosildi == 1 && x5Bosildi == 1 && x9Bosildi == 1) ||
     (x7Bosildi == 1 && x8Bosildi == 1 && x9Bosildi == 1)
   ) {
-     modalBack.classList.add("show");
+    // xHisobi.textContent = (xHisobi.textContent)++;
+    modalBack.classList.add("show");
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
     (o7Bosild == 1 && o8Bosild == 1 && o9Bosild == 1)
   ) {
-     modalBack.classList.add("show");
+    // oHisobi.textContent = (oHisobi.textContent)++;
+    modalBack.classList.add("show");
   }
+});
+
+tryBtn.addEventListener("click", () => {
+  modalBack.classList.remove("show");
+  setTimeout(() => {
+    location.reload();
+}, 139);
+
 });
