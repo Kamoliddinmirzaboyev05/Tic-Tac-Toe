@@ -28,6 +28,8 @@ const circle8 = document.querySelector(".circle8");
 const circle9 = document.querySelector(".circle9");
 
 const xHisobi = document.querySelector("#xhisobi");
+const xHisobiDisplay = document.querySelector("#xhisobiDisplay");
+const oHisobiDisplay = document.querySelector("#ohisobiDisplay");
 const oHisobi = document.querySelector("#ohisobi");
 const tryBtn = document.querySelector("#tryBtn");
 const whoWin = document.querySelector(".whoWin");
@@ -70,14 +72,17 @@ cell1.addEventListener("click", () => {
     (x1Bosildi == 1 && x4Bosildi == 1 && x7Bosildi == 1)
   ) {
     modalBack.classList.add("show");
-
+    whoWin.textContent = "X O'YINCHI YUTDI";
     xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1) ||
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1)
   ) {
     oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
+    whoWin.textContent = "0 O'YINCHI YUTDI";
     modalBack.classList.add("show");
   }
 });
@@ -97,12 +102,18 @@ cell2.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = (xHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o2Bosild == 1 && o5Bosild == 1 && o8Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1)
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell3.addEventListener("click", () => {
@@ -122,6 +133,9 @@ cell3.addEventListener("click", () => {
   ) {
     xHisobi.textContent = xHisobi.textContent++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o2Bosild == 1 && o3Bosild == 1) ||
@@ -129,6 +143,9 @@ cell3.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = Number(oHisobi)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell4.addEventListener("click", () => {
@@ -147,12 +164,18 @@ cell4.addEventListener("click", () => {
   ) {
     xHisobi.textContent = xHisobi.textContent++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1) ||
     (o4Bosild == 1 && o5Bosild == 1 && o6Bosild == 1)
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell5.addEventListener("click", () => {
@@ -172,6 +195,9 @@ cell5.addEventListener("click", () => {
   ) {
     xHisobi.textContent = xHisobi.textContent++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
     (o2Bosild == 1 && o5Bosild == 1 && o8Bosild == 1) ||
@@ -179,6 +205,9 @@ cell5.addEventListener("click", () => {
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell6.addEventListener("click", () => {
@@ -197,12 +226,18 @@ cell6.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = (xHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o4Bosild == 1 && o5Bosild == 1 && o6Bosild == 1)
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell7.addEventListener("click", () => {
@@ -222,6 +257,9 @@ cell7.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = (xHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o1Bosild == 1 && o4Bosild == 1 && o7Bosild == 1) ||
     (o3Bosild == 1 && o5Bosild == 1 && o7Bosild == 1) ||
@@ -229,6 +267,9 @@ cell7.addEventListener("click", () => {
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell8.addEventListener("click", () => {
@@ -247,12 +288,18 @@ cell8.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = (xHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o2Bosild == 1 && o8Bosild == 1 && o5Bosild == 1) ||
     (o7Bosild == 1 && o8Bosild == 1 && o9Bosild == 1)
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 cell9.addEventListener("click", () => {
@@ -272,6 +319,9 @@ cell9.addEventListener("click", () => {
   ) {
     // xHisobi.textContent = (xHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "X O'YINCHI YUTDI";
+    xHisobi.textContent = Number(xHisobi.textContent) + 1;
+    xHisobiDisplay = xHisobi;
   } else if (
     (o3Bosild == 1 && o6Bosild == 1 && o9Bosild == 1) ||
     (o1Bosild == 1 && o5Bosild == 1 && o9Bosild == 1) ||
@@ -279,6 +329,9 @@ cell9.addEventListener("click", () => {
   ) {
     // oHisobi.textContent = (oHisobi.textContent)++;
     modalBack.classList.add("show");
+    whoWin.textContent = "0 O'YINCHI YUTDI";
+    oHisobi.textContent = Number(oHisobi.textContent) + 1;
+    oHisobiDisplay = oHisobi;
   }
 });
 
@@ -286,6 +339,5 @@ tryBtn.addEventListener("click", () => {
   modalBack.classList.remove("show");
   setTimeout(() => {
     location.reload();
-}, 139);
-
+  }, 139);
 });
